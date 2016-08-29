@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>/r/EarthPorn Map | codelove</title>
+	<meta name="viewport" content="width=500, initial-scale=1">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<script src="/js/top200.js"></script>
+	<script src="/js/map.js"></script>
+	<section>
+		<header>
+			<a href="//codelove.de">
+				<img src="/img/logo.png" alt="codelove">
+				<span>/EarthPorn</span>
+			</a>
+		</header>
+		<h2>What is this?</h2>
+		<p>This map shows the top 200 entries from the <a href="//www.reddit.com/r/earthporn">subreddit /r/EarthPorn</a>!<br>(as of 2016-05-21)<br><a href="https://docs.google.com/spreadsheets/d/1Wee5SOIuVOs9x5vctQvyAvtGXr-irbRCVr-ggGMaW-4" target="_blank">statistic & raw data</a></p>
+		<h2>I like this!</h2>
+		<p>Great, then how about a little donation to cover the costs? Thanks!</p>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="L2MNEC955KHMN">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Donate">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+		<h2>Do you have e-mail?</h2>
+		<p>Sure, <script>writemail();</script>.</p>
+	</section>
+	<div id="map"></div>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtC3-SMZvImi05aYbs8os88LzPSLezxnI&callback=initMap"
     async defer></script>
   </body>
