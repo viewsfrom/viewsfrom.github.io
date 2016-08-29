@@ -56,8 +56,8 @@ table {
 /* custom */
 
 body {
-	font: 16px/1.5 'Source Code Pro', monospace;
-	color: #222;
+	font: 16px/1.5 "Arial", Helvetica, sans-serif;
+	color: #000;
 }
 
 section {
